@@ -1,0 +1,13 @@
+name: Hello World
+# when to trigger the pipeline. we can push or manual, someother events
+# This tells when the workflow should start.
+# Example: push, pull_request, manual trigger, etc.
+on: [push] # trigger
+jobs: #  A workflow can have one or more jobs.
+  hello: # name
+    runs-on: ubuntu-latest # Runner where the job will execute (GitHub-hosted runner)
+    steps: #  # Sequence of steps executed inside the job
+      - name: step1
+        run: echo "hello world"
+      - name: step2
+        run: echo "hllo github actions"
