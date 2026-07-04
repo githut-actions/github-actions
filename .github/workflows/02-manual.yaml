@@ -12,4 +12,6 @@ jobs:
     steps:
       - name: print name
         run: echo "hello ${{ github.event.inputs.name}}"
+
+
   
