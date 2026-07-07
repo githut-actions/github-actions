@@ -1,4 +1,4 @@
-name: parellel
+name: dependency
 on: [push]
 jobs:
     job-1:
